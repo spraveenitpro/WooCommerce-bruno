@@ -1,0 +1,31 @@
+meta {
+  name: Create a product
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://woocommerce.mystagingwebsite.com/wp-json/wc/v3/products
+  body: json
+  auth: basic
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:basic {
+  username: ck_56e327b57649af8397c79c289aea6b795434d07c
+  password: cs_e4c8a963f8a3d80ddd6f5b3604c25af1c5eee3ed
+}
+
+body:json {
+  {
+    "name": "Simple REST product",
+    "type": "simple",
+    "regular_price": "21.99",
+    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+    "short_description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "sku": "fdgsdfg2343dd"
+  }
+}

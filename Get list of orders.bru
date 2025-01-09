@@ -1,0 +1,25 @@
+meta {
+  name: Get list of orders
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://woocommerce.mystagingwebsite.com/wp-json/wc/v3/orders
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: ck_56e327b57649af8397c79c289aea6b795434d07c
+  password: cs_e4c8a963f8a3d80ddd6f5b3604c25af1c5eee3ed
+}
+
+body:json {
+  {
+  "status": "completed",
+  "per_page": 100,
+  "dp": 2,
+  "page": 1
+  }
+}

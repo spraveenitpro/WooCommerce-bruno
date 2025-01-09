@@ -1,0 +1,22 @@
+meta {
+  name: Add Note to order
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://woocommerce.mystagingwebsite.com/wp-json/wc/v2/orders/3490/notes
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: ck_56e327b57649af8397c79c289aea6b795434d07c
+  password: cs_e4c8a963f8a3d80ddd6f5b3604c25af1c5eee3ed
+}
+
+body:json {
+  {
+    "note": "Hello World!"
+  }
+}
